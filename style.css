@@ -1,8 +1,12 @@
 html,body{
     padding: 0 10% 0 10%;
+
+    background: #ffddaa;
+}
+.body {
     font-family: 'Courier New', Courier, monospace;
     color: #226644;
-    background: #ffddaa;
+    display: flow-root;
 }
 
 .banner {
