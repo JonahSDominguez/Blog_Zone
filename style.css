@@ -1,10 +1,9 @@
 html,body{
     padding: 0 10% 0 10%;
-
-    background: #ffddaa;
-}
-.body {
     font-family: 'Courier New', Courier, monospace;
+    background: #ebdbc4;
+}
+.content {
     color: #226644;
     display: flow-root;
 }

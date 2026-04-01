@@ -13,5 +13,13 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonahSDominguez/Blog_Zone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonahSDominguez/Blog_Zone/issues"
+  },
+  "homepage": "https://github.com/JonahSDominguez/Blog_Zone#readme"
 }
