@@ -5,11 +5,13 @@ html,body{
 }
 .content {
     color: #226644;
+    font-family: 'Courier New', Courier, monospace;
     display: flow-root;
 }
 
 .banner {
     padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
