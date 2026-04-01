@@ -1,3 +1,9 @@
+// GitHub Pages static hosting - use client-side storage or serverless functions
+// Option 1: Use Vercel/Netlify serverless functions (recommended)
+// Option 2: Use GitHub API + Actions for POST requests
+// Option 3: Use Firebase/Supabase backend
+
+// For local dev with Express:
 const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
@@ -33,6 +39,9 @@ app.post('/posts', async (req, res) => {
         res.status(500).json({ error: 'Failed to save post' });
     }
 });
+
+// For GitHub Pages deployment, convert endpoints to serverless functions in /api folder
+// Example: Create /api/posts.js for Vercel deployment
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}/`);
