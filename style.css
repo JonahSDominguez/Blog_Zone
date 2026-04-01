@@ -1,0 +1,23 @@
+html,body{
+    padding: 0 10% 0 10%;
+}
+
+.banner {
+    padding: 20px;
+    text-align: center;
+}
+
+.new-post {
+    float: right;
+}
+
+
+.sidebar {
+    padding: 15px;
+    float: left;
+}
+
+.content {
+    display: flow-root;
+    padding: 35px;
+}
