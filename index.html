@@ -23,7 +23,7 @@
         <script type="module">
         (async () => {
             try{
-                const response = await fetch('posts.json', { cache: 'no-store' });
+                const response = await fetch('https://your-app.up.railway.app/posts', { cache: 'no-store' });
                 const posts = await response.json();
 
                 const postsContainer = document.getElementById('content');
