@@ -1,11 +1,10 @@
 html,body{
     padding: 0 10% 0 10%;
     font-family: 'Courier New', Courier, monospace;
-    background: #ff00aa;
+    background: #aaaa33;
 }
 .content {
     color: #226644;
-    background: #ff00aa;
     font-family: 'Courier New', Courier, monospace;
     display: flow-root;
 }

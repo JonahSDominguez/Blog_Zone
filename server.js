@@ -11,6 +11,9 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const POSTS_FILE = path.join(__dirname, 'posts.json');
+const cors = require('cors');
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.static(__dirname)); // serve index.html, new_post.html, style.css, posts.json
