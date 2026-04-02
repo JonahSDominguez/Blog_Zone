@@ -28,6 +28,12 @@ app.post('/posts', async (req, res) => {
         let posts = [];
         try {
             const data = await fs.readFile(POSTS_FILE, 'utf8');
+
+
+            if (!data.trim()) {
+                return res.json([]);
+            }
+
             posts = JSON.parse(data);
             if (!Array.isArray(posts)) posts = [];
         } catch {
