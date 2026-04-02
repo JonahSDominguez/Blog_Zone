@@ -1,8 +1,7 @@
 html,body{
-    padding: 0 10% 0 10%;
+    padding: 0 3% 0 3%;
     font-family: 'Courier New', Courier, monospace;
     background: #334455;
-    font-size: 32px;
 }
 .content {
     color: #ddffdd;
