@@ -18,34 +18,51 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname)); // serve index.html, new_post.html, style.css, posts.json
 
+app.get('/posts', async (req, res) => {
+    try {
+        const data = await fs.readFile(POSTS_FILE, 'utf8');
+
+        if (!data.trim()) {
+            return res.json([]);
+        }
+
+        const posts = JSON.parse(data);
+        res.json(posts);
+
+    } catch (err) {
+        console.error('GET failed:', err);
+        res.json([]);
+    }
+});
+
+
 app.post('/posts', async (req, res) => {
     const post = req.body;
-    if (!post || !post.title) return res.status(400).json({ error: 'Invalid post payload' });
+
+    if (!post || !post.title) {
+        return res.status(400).json({ error: 'Invalid post payload' });
+    }
 
     post.date = post.date || new Date().toISOString();
 
     try {
         let posts = [];
+
         try {
             const data = await fs.readFile(POSTS_FILE, 'utf8');
-
-
-            if (!data.trim()) {
-                return res.json([]);
-            }
-
-            posts = JSON.parse(data);
-            res.json(posts);
-            if (!Array.isArray(posts)) posts = [];
+            posts = data.trim() ? JSON.parse(data) : [];
         } catch {
             posts = [];
         }
 
         posts.unshift(post);
+
         await fs.writeFile(POSTS_FILE, JSON.stringify(posts, null, 4), 'utf8');
+
         res.status(201).json(post);
+
     } catch (err) {
-        console.error('Failed to save post:', err);
+        console.error('POST failed:', err);
         res.status(500).json({ error: 'Failed to save post' });
     }
 });
