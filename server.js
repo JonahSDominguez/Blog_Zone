@@ -35,6 +35,7 @@ app.post('/posts', async (req, res) => {
             }
 
             posts = JSON.parse(data);
+            res.json(posts);
             if (!Array.isArray(posts)) posts = [];
         } catch {
             posts = [];
