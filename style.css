@@ -1,16 +1,17 @@
 html,body{
     padding: 0 10% 0 10%;
     font-family: 'Courier New', Courier, monospace;
-    background: #444444;
+    background: #334455;
     font-size: 32px;
 }
 .content {
-    color: #226644;
+    color: #ddffdd;
     font-family: 'Courier New', Courier, monospace;
     display: flow-root;
 }
 
 .banner {
+    color: #ffdddd;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -22,6 +23,7 @@ html,body{
 
 
 .sidebar {
+    background-color: #a0aaaa;
     padding: 15px;
     float: left;
 }
