@@ -1,17 +1,18 @@
 html,body{
     padding: 0 10% 0 10%;
-    font-family: 'Courier New', Courier, monospace;
-    background: #aaaa33;
+   /*font-family: 'Courier New', Courier, monospace; */
+    background: #f8dff0; /* soft pink instead of gray */
+    font-family: "MS Sans Serif", "Tahoma", sans-serif;
+    color: #4a2c3a;
+    margin: 0;
 }
 .content {
     color: #226644;
-    font-family: 'Courier New', Courier, monospace;
     display: flow-root;
 }
 
 .banner {
     padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
@@ -28,4 +29,101 @@ html,body{
 .content {
     display: flow-root;
     padding: 35px;
+}
+/* --- Base --- */
+body {
+
+}
+
+/* --- Window container --- */
+.window {
+background: #ffe6f2;
+border: 2px solid;
+border-color: #ffffff #c8a2c8 #c8a2c8 #ffffff;
+box-shadow: 2px 2px 0 #c8a2c8;
+padding: 0;
+width: 400px;
+margin: 40px auto;
+}
+
+/* --- Title bar --- */
+.title-bar {
+background: linear-gradient(90deg, #ffb6d9, #ffcce6);
+color: #5a2a44;
+padding: 4px 8px;
+font-weight: bold;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* --- Title bar buttons --- */
+.title-bar button {
+background: #ffe6f2;
+border: 2px solid;
+border-color: #ffffff #c8a2c8 #c8a2c8 #ffffff;
+width: 20px;
+height: 20px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.title-bar button:active {
+border-color: #c8a2c8 #ffffff #ffffff #c8a2c8;
+}
+
+/* --- Content area --- */
+.window-body {
+padding: 12px;
+}
+
+/* --- Buttons --- */
+button {
+background: #ffe6f2;
+border: 2px solid;
+border-color: #ffffff #c8a2c8 #c8a2c8 #ffffff;
+padding: 6px 12px;
+cursor: pointer;
+font-family: inherit;
+}
+
+button:active {
+border-color: #c8a2c8 #ffffff #ffffff #c8a2c8;
+}
+
+/* --- Inputs --- */
+input, textarea {
+background: #fff0f8;
+border: 2px inset #c8a2c8;
+padding: 4px;
+font-family: inherit;
+width: 100%;
+box-sizing: border-box;
+}
+
+/* --- Cute extras --- */
+hr {
+border: none;
+border-top: 2px solid #c8a2c8;
+}
+
+.post {
+background: #fff0f8;
+border: 2px inset #c8a2c8;
+padding: 8px;
+margin-bottom: 10px;
+}
+
+/* --- Scrollbar (webkit browsers) --- */
+::-webkit-scrollbar {
+width: 14px;
+}
+
+::-webkit-scrollbar-track {
+background: #ffe6f2;
+}
+
+::-webkit-scrollbar-thumb {
+background: #ffb6d9;
+border: 2px solid #ffe6f2;
 }
