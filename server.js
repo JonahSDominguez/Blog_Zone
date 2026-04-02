@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname)); // serve index.html, new_post.html, style.css, posts.json
 
-app.post('https://blogzone-production.up.railway.app/posts', async (req, res) => {
+app.post('/posts', async (req, res) => {
     const post = req.body;
     if (!post || !post.title) return res.status(400).json({ error: 'Invalid post payload' });
 
