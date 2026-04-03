@@ -24,12 +24,12 @@ html,body{
     text-align: center;
 }
 .new-post{
+    background-color: #ff0000;
+    color: #FFFFFF;
     border-width:3px;  
-    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    border-color:#ff9999 #aa0000 #aa0000 #ff9999;
     border-style:solid;
     padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     font-weight:bold;  
@@ -60,8 +60,10 @@ html,body{
     resize: vertical;
 }
 .new-post-form button {
+    background-color: #ff0000;
+    color: #FFFFFF;
     border-width:3px;  
-    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    border-color:#ff9999 #aa0000 #aa0000 #ff9999;
     border-style:solid;
     padding: 10px 20px;
     cursor: pointer;
