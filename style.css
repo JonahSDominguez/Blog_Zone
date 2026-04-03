@@ -23,18 +23,49 @@ html,body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
-
-.new-post {
-  background:#C0C0C0;
-  border-width:1px;
-  border-color:#FFFFFF #808080 #808080 #FFFFFF;
-  padding: 2px;
-  font: size 16px;
-  font-weight:bold;
-  font-family:Tahoma;
-  text-align:center;
+.new-post{
+    border-width:3px;  
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    border-style:solid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight:bold;  
 }
-
+.new-post-form {
+    padding: 5px;
+    background:#C0C0C0;
+    border-width:3px;  
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    border-style:solid;
+    padding: 2px;
+    font-size: 16px;
+    font-weight:bold;
+    font-family:Tahoma;
+    text-align:center;
+}
+.new-post-form input[type="text"], .new-post-form textarea {
+    border-width:3px;  
+    border-color:#808080 #FFFFFF #FFFFFF #808080;
+    border-style:solid;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+}
+.new-post-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+.new-post-form button {
+    border-width:3px;  
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    border-style:solid;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
 .sidebar {
     background-color: #a0aaaa;
